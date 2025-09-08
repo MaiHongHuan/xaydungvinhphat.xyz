@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CÔNG TY TNHH TM DV XD VĨNH PHÁT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0b63a3; /* xanh dương */
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111}
+    header{background:#fff;border-bottom:1px solid #e6edf4}
+    .container{max-width:1180px;margin:0 auto;padding:0 20px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:60px;height:60px;object-fit:cover;border-radius:6px}
+    nav ul{list-style:none;margin:0;display:flex;gap:18px;padding:0}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .cta{background:var(--primary);color:#fff;padding:9px 14px;border-radius:6px;text-decoration:none}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:30px;padding:44px 0;align-items:center}
+    .hero .eyebrow{color:var(--primary);font-weight:700}
+    .hero h1{font-size:32px;margin:10px 0 8px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(6,30,55,0.06)}
+
+    /* Services */
+    .services{padding:30px 0}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:linear-gradient(180deg,#fff,#f7fbff);padding:20px;border-radius:10px}
+
+    /* Projects */
+    .projects{padding:30px 0}
+    .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .project{background:var(--card);border-radius:10px;overflow:hidden}
+    .project img{width:100%;height:180px;object-fit:cover;display:block}
+    .project .meta{padding:12px}
+
+    /* News */
+    .news{display:flex;gap:20px;padding:30px 0}
+    .news-list{flex:1}
+    .news-item{display:flex;gap:12px;background:var(--card);padding:12px;border-radius:8px;margin-bottom:12px}
+    .news-item img{width:120px;height:80px;object-fit:cover;border-radius:6px}
+
+    footer{background:#072235;color:#dbeafe;padding:30px 0;margin-top:30px}
+    footer a{color:inherit}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .project-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      nav ul{display:none}
+      .cards{grid-template-columns:1fr}
+      .services-grid{grid-template-columns:1fr}
+      .project-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">
+          <img src="images/logo.png" alt="Logo công ty">
+          <div>
+            <div style="font-weight:700">CÔNG TY TNHH TM DV XD VĨNH PHÁT</div>
+            <div style="font-size:12px;color:var(--muted)">Kiến trúc • Xây dựng • Nội thất</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px">
+          <nav>
+            <ul>
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#services">Dịch vụ</a></li>
+              <li><a href="#projects">Công trình</a></li>
+              <li><a href="#news">Tin tức</a></li>
+              <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+          </nav>
+          <a class="cta" href="#contact">Yêu cầu báo giá</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <div class="eyebrow">CÔNG TY TNHH TM DV XD VĨNH PHÁT</div>
+        <h1>Thiết kế & thi công — Giao trọn gói, chất lượng cam kết</h1>
+        <p>Chúng tôi tư vấn thiết kế, thi công xây dựng, hoàn thiện nội thất với kinh nghiệm thực tế. Dự án từ nhà phố, cải tạo đến biệt thự.</p>
+        <div class="cards" aria-hidden>
+          <div class="card"><strong>Thiết kế kiến trúc</strong><div style="font-size:13px;color:var(--muted)">Bản vẽ kỹ thuật & 3D</div></div>
+          <div class="card"><strong>Thi công trọn gói</strong><div style="font-size:13px;color:var(--muted)">Từ móng đến hoàn thiện</div></div>
+          <div class="card"><strong>Nội thất</strong><div style="font-size:13px;color:var(--muted)">Thiết kế & thi công nội thất</div></div>
+        </div>
+      </div>
+      <aside>
+        <div style="background:linear-gradient(180deg,#e6f2ff,#ffffff);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(11,99,163,0.12)">
+          <h3 style="margin:6px 0">Gọi ngay để tư vấn</h3>
+          <p style="margin:6px 0;color:var(--muted)">0988 844 399</p>
+          <a href="#contact" class="cta">Đặt lịch khảo sát</a>
+        </div>
+        <div style="margin-top:14px;background:var(--card);padding:12px;border-radius:10px;text-align:center">
+          <div style="font-weight:700">App Tiện Ích Xây Nhà</div>
+          <div style="font-size:13px;color:var(--muted)">Quản lý dự án, thanh toán, tiến độ</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <h2>Dịch vụ của chúng tôi</h2>
+        <a href="#projects">Xem tất cả</a>
+      </div>
+      <div class="services-grid">
+        <div class="service">
+          <h4>Thiết kế kiến trúc</h4>
+          <p style="margin:8px 0;color:var(--muted);font-size:14px">Bản vẽ thi công, phối cảnh 3D, tư vấn vật liệu.</p>
+        </div>
+        <div class="service">
+          <h4>Thi công xây dựng</h4>
+          <p style="margin:8px 0;color:var(--muted);font-size:14px">Thi công phần thô, hoàn thiện, đảm bảo tiến độ.</p>
+        </div>
+        <div class="service">
+          <h4>Nội thất & hoàn thiện</h4>
+          <p style="margin:8px 0;color:var(--muted);font-size:14px">Thiết kế nội thất, thi công trọn gói nội thất.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <h2>Công trình tiêu biểu</h2>
+        <a href="#projects">Xem tất cả</a>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <img src="https://via.placeholder.com/600x400.png?text=Project+1" alt="Công trình 1">
+          <div class="meta"><strong>Biệt thự hiện đại tại TP.HCM</strong><div style="font-size:13px;color:var(--muted)">Thiết kế + thi công trọn gói</div></div>
+        </article>
+        <article class="project">
+          <img src="https://via.placeholder.com/600x400.png?text=Project+2" alt="Công trình 2">
+          <div class="meta"><strong>Nhà phố 3 tầng</strong><div style="font-size:13px;color:var(--muted)">Cải tạo & hoàn thiện</div></div>
+        </article>
+        <article class="project">
+          <img src="https://via.placeholder.com/600x400.png?text=Project+3" alt="Công trình 3">
+          <div class="meta"><strong>Căn hộ mẫu</strong><div style="font-size:13px;color:var(--muted)">Thiết kế nội thất</div></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="news">
+      <div class="news-list">
+        <h2>Bản tin công trình</h2>
+        <div class="news-item">
+          <img src="https://via.placeholder.com/320x200.png?text=News+1" alt="Tin 1">
+          <div>
+            <strong>Bàn giao công trình tại Gò Vấp</strong>
+            <div style="font-size:13px;color:var(--muted);margin-top:6px">Chúc mừng đội ngũ đã hoàn thành bàn giao. Đăng lúc: 03-09-2025</div>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://via.placeholder.com/320x200.png?text=News+2" alt="Tin 2">
+          <div>
+            <strong>Đào tạo an toàn lao động tháng 8/2025</strong>
+            <div style="font-size:13px;color:var(--muted);margin-top:6px">Tổ chức nhiều buổi đào tạo tại công trình. Đăng lúc: 22-08-2025</div>
+          </div>
+        </div>
+      </div>
+      <aside style="width:320px">
+        <div style="background:var(--card);padding:14px;border-radius:10px;box-shadow:0 8px 20px rgba(6,30,55,0.06)">
+          <h4>Đăng ký nhận tin</h4>
+          <p style="font-size:13px;color:var(--muted)">Nhập email để nhận bản tin và cập nhật công trình mới.</p>
+          <form onsubmit="event.preventDefault();alert('Cảm ơn! Chúng tôi đã nhận yêu cầu.');">
+            <input type="email" placeholder="Email của bạn" required style="width:100%;padding:10px;border-radius:6px;border:1px solid #e6eef7;margin-bottom:8px">
+            <button type="submit" class="cta" style="width:100%">Đăng ký</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="padding:24px 0">
+      <h2>Liên hệ</h2>
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
+        <form style="background:var(--card);padding:16px;border-radius:10px;" onsubmit="event.preventDefault();alert('Gửi liên hệ thành công');">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <input required placeholder="Họ tên" style="padding:10px;border-radius:6px;border:1px solid #e6eef7">
+            <input required placeholder="Số điện thoại" style="padding:10px;border-radius:6px;border:1px solid #e6eef7">
+          </div>
+          <input required placeholder="Email" style="width:100%;padding:10px;border-radius:6px;border:1px solid #e6eef7;margin-top:8px">
+          <textarea required placeholder="Nội dung" style="width:100%;padding:10px;border-radius:6px;border:1px solid #e6eef7;margin-top:8px;height:120px"></textarea>
+          <div style="display:flex;justify-content:flex-end;margin-top:8px"><button class="cta">Gửi yêu cầu</button></div>
+        </form>
+        <div style="background:var(--card);padding:16px;border-radius:10px">
+          <h4>Thông tin liên hệ</h4>
+          <p style="margin:6px 0"><strong>Hotline:</strong> 0988 844 399</p>
+          <p style="margin:6px 0"><strong>Địa chỉ:</strong> TP. Hồ Chí Minh</p>
+          <p style="margin:6px 0;color:var(--muted)">Giờ làm việc: 8:00 - 17:30 (T2 - T7)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+      <div style="max-width:540px">
+        <h3>CÔNG TY TNHH TM DV XD VĨNH PHÁT</h3>
+        <p style="color:var(--muted);font-size:14px">Copyright © VĨNH PHÁT . All copyrights are reserved</p>
+      </div>
+      <div style="text-align:right">
+        <p style="margin:0 0 8px">0988 844 399</p>
+        <p style="margin:0">Email: ctyvinhphat86@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('click', function(e){
+      if(e.target.matches('a[href="#projects"]')){
+        document.getElementById('projects').scrollIntoView({behavior:'smooth'});
+      }
+    });
+  </script>
+</body>
+</html>
